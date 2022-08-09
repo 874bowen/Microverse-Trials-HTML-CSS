@@ -1,27 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <title>Fork Me! FCC: Test Suite Template</title>
-    <link rel="stylesheet" href="css/style.css">
-  </head>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/style.css">
+  <title>Document</title>
+</head>
+<body>  
+    <section  id="welcome-section" class="section1">
+        <nav id="navbar">
+     
+            <a href="#About" class="nav-link">About</a>
+            <a href="#Work" class="nav-link">Work</a>
+            <a href="#Contact" class="nav-link">Contact</a>
+            
+             
+          </nav>
+        <h1 id="About"><div id="first" >Hey we are Ivan & Susmoy</div><br>
+            <div id="second">Software Engineers</div>
+            <p id="extra-info">Enthusiastic Software Engineers eager to contribute to team success through hard work, attention to detail and excellent organizational skills. Clear understanding of web development and designing and training in Responsive Web Design. Motivated to learn, grow and excel in Technology.
+            </p>
+        </h1>
 
-  <body>
-    <h1>Hello World!</h1>
-    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+    </section>
+    <section id="projects" >
+        <p id=proj ><u>Below are some of our projects</u></p>
+        <div id="tile" >
+        <div class="project-tile" id="Work">
+            <img src="https://images.pexels.com/photos/238118/pexels-photo-238118.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Daniel Moi tribute page">
+            <figcaption><a href="#" target="_blank" >Online Laptop Shopping App</a></figcaption>
+        </div>
+        <div class="project-tile">
+            <img src="https://images.pexels.com/photos/271639/pexels-photo-271639.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Bowen survey form">
+            <figcaption><a href="#" target="_blank" >Hotel Management tool</a></figcaption>
+        </div>
+        <div class="project-tile">
+            <img src="https://images.pexels.com/photos/2130516/pexels-photo-2130516.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Skateboard landing page">
+            <figcaption><a href="#" target="_blank" >USA Documentation Page</a></figcaption>
+        </div>
+    </div>
+        <button id="show"><a href="#" target="_blank" >Show All</a></button>
 
-    <!--
-
-    Hello Camper!
-
-    For now, the test suite only works in Chrome!
-    Please read the README below in the JS Editor before beginning.
-    Feel free to delete this message once you have read it.
-    Good luck and Happy Coding!
-
-    - The freeCodeCamp Team
-
-    -->
-    <script  src="js/index.js"></script>
-  </body>
+    </section>
+    <section id="profile-link" id="Contact">
+        <p>Let's join hands....</p>
+        <ul class="media" id="Contact">
+            <li><a href="#"><i class="fa fa-facebook" ></i></a></li><p class="social">facebook</p>
+            <li><a href="#"><i class="fa fa-twitter" ></i></a></li><p class="social">twitter</p>
+            <li><a href="#"><i class="fa fa-github" ></i></a></li><p class="social">github</p>
+            <li><a href="#"><i class="fa fa-instagram"></i></a></li><p class="social">instagram</p>
+            
+        </ul>
+    </section>
+  </div>
+  <script>
+    window.onscroll = function() {myFunction()};
+    
+    var header = document.getElementById("navbar");
+    var sticky = header.offsetTop;
+    
+    function myFunction() {
+      if (window.pageYOffset > sticky) {
+        header.classList.add("sticky");
+      } else {
+        header.classList.remove("sticky");
+      }
+    }
+</script>
+</body>
 </html>
